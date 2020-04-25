@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2A442D8F7C96B7DFAE6C3968 /* Pods_FoodTruck.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 117294F85DDC16E259B9B572 /* Pods_FoodTruck.framework */; };
-		5ACD52A22454172E00903F26 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5ACD52A12454172D00903F26 /* GoogleService-Info.plist */; };
+		5ACD52A624541FF800903F26 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5ACD52A524541FF800903F26 /* GoogleService-Info.plist */; };
 		5AD8D5812453C5FC00AB291E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD8D5802453C5FC00AB291E /* AppDelegate.swift */; };
 		5AD8D5832453C5FC00AB291E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD8D5822453C5FC00AB291E /* SceneDelegate.swift */; };
 		5AD8D5882453C5FC00AB291E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AD8D5862453C5FC00AB291E /* Main.storyboard */; };
@@ -22,7 +22,7 @@
 
 /* Begin PBXFileReference section */
 		117294F85DDC16E259B9B572 /* Pods_FoodTruck.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FoodTruck.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5ACD52A12454172D00903F26 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5ACD52A524541FF800903F26 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		5AD8D57D2453C5FC00AB291E /* FoodTruck.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodTruck.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AD8D5802453C5FC00AB291E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5AD8D5822453C5FC00AB291E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -85,7 +85,7 @@
 				5AD8D5962453D6CC00AB291E /* ViewControllers */,
 				5AD8D5892453C5FF00AB291E /* Assets.xcassets */,
 				5AD8D58B2453C5FF00AB291E /* LaunchScreen.storyboard */,
-				5ACD52A12454172D00903F26 /* GoogleService-Info.plist */,
+				5ACD52A524541FF800903F26 /* GoogleService-Info.plist */,
 				5AD8D58E2453C5FF00AB291E /* Info.plist */,
 			);
 			path = FoodTruck;
@@ -172,7 +172,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5AD8D58D2453C5FF00AB291E /* LaunchScreen.storyboard in Resources */,
-				5ACD52A22454172E00903F26 /* GoogleService-Info.plist in Resources */,
+				5ACD52A624541FF800903F26 /* GoogleService-Info.plist in Resources */,
 				5AD8D58A2453C5FF00AB291E /* Assets.xcassets in Resources */,
 				5AD8D5882453C5FC00AB291E /* Main.storyboard in Resources */,
 			);

@@ -161,7 +161,7 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="892"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="h7T-hy-MUX">
-                                <rect key="frame" x="40" y="128" width="334" height="254"/>
+                                <rect key="frame" x="40" y="128" width="334" height="164"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KsB-8o-LGs">
                                         <rect key="frame" x="0.0" y="0.0" width="334" height="24"/>
@@ -184,17 +184,6 @@
                                         <rect key="frame" x="0.0" y="130" width="334" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" keyboardAppearance="alert"/>
-                                    </textField>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Re-type Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h1G-Bc-nN9">
-                                        <rect key="frame" x="0.0" y="180" width="334" height="24"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Re-type Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TXA-6p-ZV3">
-                                        <rect key="frame" x="0.0" y="220" width="334" height="34"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
                                     </textField>
                                 </subviews>
                             </stackView>
@@ -231,7 +220,6 @@
                     <connections>
                         <outlet property="emailTextField" destination="wjR-Ls-vpX" id="7K0-Wy-fWj"/>
                         <outlet property="passwordTextField" destination="gZO-ZJ-ptk" id="ZJM-u6-mXV"/>
-                        <outlet property="retypePasswordTextField" destination="TXA-6p-ZV3" id="gH5-l7-y9d"/>
                         <segue destination="cAe-lD-ZGw" kind="show" identifier="ainScreenShowSegueSignupToM" id="cWZ-wM-uFQ"/>
                     </connections>
                 </viewController>

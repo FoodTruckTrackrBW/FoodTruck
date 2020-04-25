@@ -48,14 +48,7 @@ class LoginInViewController: UIViewController {
     }
     
     @IBAction func loginButtonTapped(_ sender: UIButton) {
-        guard
-            let email = emailTextField.text,
-            let password = passwordTextField.text
-            else { return }
-        authController.signIn(email: email, password: password)
-        if Auth.auth().currentUser != nil {
-            self.performSegue(withIdentifier: "LoginToMainScreenShowSegue", sender: self)
-        }
+        login()
     }
     /*
     // MARK: - Navigation
@@ -66,5 +59,13 @@ class LoginInViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    
+    private func login() {
+        guard let email = emailTextField.text,
+            let password = passwordTextField.text else { return }
+        authController.signIn(email: email, password: password)
+        if Auth.auth().currentUser != nil {
+            self.performSegue(withIdentifier: "LoginToMainScreenShowSegue", sender: self)
+        }
+    }
 }

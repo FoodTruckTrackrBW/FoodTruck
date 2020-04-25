@@ -12,15 +12,15 @@ import FirebaseAuth
 typealias completion = Result<User?, Error>
 
 class SignUpViewController: UIViewController {
-
+    
     var handle: AuthStateDidChangeListenerHandle?
     
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
     }
     
@@ -35,7 +35,7 @@ class SignUpViewController: UIViewController {
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         
-//        Auth.auth().removeStateDidChangeListener(handle!)
+        //        Auth.auth().removeStateDidChangeListener(handle!)
         
     }
     
@@ -47,10 +47,12 @@ class SignUpViewController: UIViewController {
     }
     
     @IBAction func signupButtonTapped(_ sender: UIButton) {
-        guard
-            let email = emailTextField.text,
-            let password = passwordTextField.text
-            else { return }
+        signUp()
+    }
+    
+    private func signUp() {
+        guard let email = emailTextField.text,
+            let password = passwordTextField.text else { return }
         
         Auth.auth().createUser(withEmail: email, password: password) { auth, error in
             if let error = error {
@@ -65,14 +67,13 @@ class SignUpViewController: UIViewController {
             }
         }
     }
-    
     /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destination.
+     // Pass the selected object to the new view controller.
+     }
+     */
 }

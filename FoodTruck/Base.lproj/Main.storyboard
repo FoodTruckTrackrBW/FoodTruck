@@ -32,7 +32,7 @@
                                 </state>
                                 <connections>
                                     <action selector="signupButtonTapped:" destination="CQe-XX-FJo" eventType="touchUpInside" id="3tP-Yk-u9t"/>
-                                    <segue destination="7kU-8d-t7p" kind="show" identifier="SignupShowSegue" id="XlI-SR-cNg"/>
+                                    <segue destination="7kU-8d-t7p" kind="show" identifier="SignupShowSegue" id="qHY-Op-dsv"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VOV-tP-Sdc">
@@ -93,7 +93,6 @@
                                 </state>
                                 <connections>
                                     <action selector="loginButtonTapped:" destination="Egg-M0-bxP" eventType="touchUpInside" id="FUg-yK-UFg"/>
-                                    <segue destination="cAe-lD-ZGw" kind="show" identifier="LoginToMainScreeShowSegue" id="J5f-yU-Otz"/>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="mXm-m4-EJ5">
@@ -143,6 +142,7 @@
                     <connections>
                         <outlet property="emailTextField" destination="jt7-eh-3Q4" id="Azl-Oq-vzz"/>
                         <outlet property="passwordTextField" destination="pPw-So-9fI" id="DCa-hD-94i"/>
+                        <segue destination="cAe-lD-ZGw" kind="show" identifier="LoginToMainScreenShowSegue" id="qmm-V8-gwd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VqB-nR-Cxl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -206,7 +206,6 @@
                                 </state>
                                 <connections>
                                     <action selector="signupButtonTapped:" destination="7kU-8d-t7p" eventType="touchUpInside" id="yFU-rl-YTt"/>
-                                    <segue destination="cAe-lD-ZGw" kind="show" identifier="SignupToMainScreenShowSegue" id="82X-J3-b8O"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -233,6 +232,7 @@
                         <outlet property="emailTextField" destination="wjR-Ls-vpX" id="7K0-Wy-fWj"/>
                         <outlet property="passwordTextField" destination="gZO-ZJ-ptk" id="ZJM-u6-mXV"/>
                         <outlet property="retypePasswordTextField" destination="TXA-6p-ZV3" id="gH5-l7-y9d"/>
+                        <segue destination="cAe-lD-ZGw" kind="show" identifier="ainScreenShowSegueSignupToM" id="cWZ-wM-uFQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="N1g-ir-M2U" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -292,7 +292,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="82X-J3-b8O"/>
+        <segue reference="cWZ-wM-uFQ"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="3793" width="6000" height="3000"/>

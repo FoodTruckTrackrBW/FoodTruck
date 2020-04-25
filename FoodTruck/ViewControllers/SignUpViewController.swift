@@ -28,6 +28,9 @@ class SignUpViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
+        handle = Auth.auth().addStateDidChangeListener({ auth, user in
+            
+        })
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -37,6 +40,12 @@ class SignUpViewController: UIViewController {
         
     }
     
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesBegan(touches, with: event)
+        view.endEditing(true)
+        emailTextField.resignFirstResponder()
+        passwordTextField.resignFirstResponder()
+    }
     
     @IBAction func signupButtonTapped(_ sender: UIButton) {
         guard
@@ -47,6 +56,7 @@ class SignUpViewController: UIViewController {
         Auth.auth().createUser(withEmail: email, password: password) { auth, error in
             if let error = error {
                 print("Error creating account: \(error)")
+                self.presentUserInfoAlert(title: "Error!", message: "There was a problem creating your account, please try again.")
             } else {
                 if let auth = auth {
                     print("Success!!!")
@@ -66,13 +76,4 @@ class SignUpViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-    func createAnAccount(email: String, password: String, completion: @escaping(completion) -> ()) {
-        Auth.auth().createUser(withEmail: email, password: password) { (result, error) in
-            if let error = error {
-                NSLog("Error creating User: \(error)")
-                return
-            }
-            completion(.success(result?.user))
-        }
-    }
 }

@@ -1,14 +1,14 @@
 //
-//  StartViewController.swift
+//  FoodTruckListViewController.swift
 //  FoodTruck
 //
-//  Created by Stephanie Ballard on 4/24/20.
+//  Created by Stephanie Ballard on 4/27/20.
 //  Copyright © 2020 Stephanie Ballard. All rights reserved.
 //
 
 import UIKit
 
-class StartViewController: UIViewController {
+class FoodTruckListViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,14 +16,7 @@ class StartViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func loginButtonTapped(_ sender: UIButton) {
-    }
-    
-    @IBAction func signupButtonTapped(_ sender: UIButton) {
-    }
-    
-    @IBAction func driverDinerSwitch(_ sender: UISwitch) {
-    }
+
     /*
     // MARK: - Navigation
 

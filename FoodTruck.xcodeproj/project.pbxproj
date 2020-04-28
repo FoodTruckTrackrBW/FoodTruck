@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		2A442D8F7C96B7DFAE6C3968 /* Pods_FoodTruck.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 117294F85DDC16E259B9B572 /* Pods_FoodTruck.framework */; };
 		5AC9C3AA2457A2AA0055D57A /* FoodTruckTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC9C3A92457A2AA0055D57A /* FoodTruckTableViewCell.swift */; };
+		5AC9C3AE2457B8B30055D57A /* APIController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC9C3AD2457B8B30055D57A /* APIController.swift */; };
+		5AC9C3B02457B9CE0055D57A /* TruckDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC9C3AF2457B9CD0055D57A /* TruckDetailViewController.swift */; };
 		5ACD52A624541FF800903F26 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5ACD52A524541FF800903F26 /* GoogleService-Info.plist */; };
 		5ACD52A9245425CE00903F26 /* AuthController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ACD52A8245425CE00903F26 /* AuthController.swift */; };
 		5ACD52AC24542C1100903F26 /* UIViewController+UIAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ACD52AB24542C1100903F26 /* UIViewController+UIAlert.swift */; };
@@ -27,6 +29,8 @@
 /* Begin PBXFileReference section */
 		117294F85DDC16E259B9B572 /* Pods_FoodTruck.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FoodTruck.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AC9C3A92457A2AA0055D57A /* FoodTruckTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTruckTableViewCell.swift; sourceTree = "<group>"; };
+		5AC9C3AD2457B8B30055D57A /* APIController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIController.swift; sourceTree = "<group>"; };
+		5AC9C3AF2457B9CD0055D57A /* TruckDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TruckDetailViewController.swift; sourceTree = "<group>"; };
 		5ACD52A524541FF800903F26 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		5ACD52A8245425CE00903F26 /* AuthController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthController.swift; sourceTree = "<group>"; };
 		5ACD52AB24542C1100903F26 /* UIViewController+UIAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+UIAlert.swift"; sourceTree = "<group>"; };
@@ -74,10 +78,19 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		5ACD52A7245425AA00903F26 /* Models */ = {
+		5AC9C3AC2457B8880055D57A /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				5ACD52A8245425CE00903F26 /* AuthController.swift */,
+				5AC9C3AD2457B8B30055D57A /* APIController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		5ACD52A7245425AA00903F26 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5AC9C3AC2457B8880055D57A /* Controllers */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -134,6 +147,7 @@
 				5AD8D5972453D6E900AB291E /* LoginInViewController.swift */,
 				5AD8D5992453D6F900AB291E /* SignUpViewController.swift */,
 				5AD8D59B2453D70900AB291E /* PreviewViewController.swift */,
+				5AC9C3AF2457B9CD0055D57A /* TruckDetailViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -259,10 +273,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5AC9C3AE2457B8B30055D57A /* APIController.swift in Sources */,
 				5AD8D5812453C5FC00AB291E /* AppDelegate.swift in Sources */,
 				5AD8D5982453D6E900AB291E /* LoginInViewController.swift in Sources */,
 				5AF51BED24579B7A006C98E3 /* FoodTruckListViewController.swift in Sources */,
 				5AD8D5832453C5FC00AB291E /* SceneDelegate.swift in Sources */,
+				5AC9C3B02457B9CE0055D57A /* TruckDetailViewController.swift in Sources */,
 				5AD8D5952453D6C300AB291E /* StartViewController.swift in Sources */,
 				5AC9C3AA2457A2AA0055D57A /* FoodTruckTableViewCell.swift in Sources */,
 				5AD8D59A2453D6F900AB291E /* SignUpViewController.swift in Sources */,

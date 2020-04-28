@@ -183,13 +183,24 @@
                     <view key="view" contentMode="scaleToFill" id="DAf-J1-SJW">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="3793" translatesAutoresizingMaskIntoConstraints="NO" id="S7W-T3-JXm">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="S7W-T3-JXm" firstAttribute="leading" secondItem="dqx-4j-lcP" secondAttribute="leading" id="Snl-af-OtX"/>
+                            <constraint firstItem="S7W-T3-JXm" firstAttribute="top" secondItem="dqx-4j-lcP" secondAttribute="top" constant="-44" id="a4N-Ne-0nt"/>
+                            <constraint firstItem="dqx-4j-lcP" firstAttribute="bottom" secondItem="S7W-T3-JXm" secondAttribute="bottom" constant="-34" id="owk-RJ-rWy"/>
+                            <constraint firstItem="dqx-4j-lcP" firstAttribute="trailing" secondItem="S7W-T3-JXm" secondAttribute="trailing" id="wnt-Cg-6jv"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="dqx-4j-lcP"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Mv-HV-bHc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2161" y="-638"/>
+            <point key="canvasLocation" x="2160.8695652173915" y="-638.16964285714278"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="JJP-4X-3Ay">
@@ -198,13 +209,24 @@
                     <view key="view" contentMode="scaleToFill" id="CGv-gp-bb3">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="3793" translatesAutoresizingMaskIntoConstraints="NO" id="3kf-69-f70">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="3kf-69-f70" firstAttribute="leading" secondItem="PSW-db-keQ" secondAttribute="leading" id="8b1-nd-e8Q"/>
+                            <constraint firstItem="PSW-db-keQ" firstAttribute="trailing" secondItem="3kf-69-f70" secondAttribute="trailing" id="fzQ-PN-Igr"/>
+                            <constraint firstItem="3kf-69-f70" firstAttribute="top" secondItem="PSW-db-keQ" secondAttribute="top" constant="-44" id="uoG-dG-9R9"/>
+                            <constraint firstItem="PSW-db-keQ" firstAttribute="bottom" secondItem="3kf-69-f70" secondAttribute="bottom" constant="-34" id="zJ4-Qd-po8"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="PSW-db-keQ"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oQt-0z-BzO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2919" y="-638"/>
+            <point key="canvasLocation" x="2918.840579710145" y="-638.16964285714278"/>
         </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="qhc-mZ-OxX">

@@ -14,7 +14,6 @@
 		5AC9C3B22457C19E0055D57A /* MenuCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC9C3B12457C19E0055D57A /* MenuCollectionViewController.swift */; };
 		5AC9C3B42457E5430055D57A /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC9C3B32457E5430055D57A /* MapViewController.swift */; };
 		5AC9C3B62457F3C00055D57A /* MenuCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC9C3B52457F3C00055D57A /* MenuCollectionViewCell.swift */; };
-		5AC9C3B9245803E50055D57A /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5AC9C3B7245803E50055D57A /* Model.xcdatamodeld */; };
 		5AC9C3BD245804660055D57A /* TruckModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC9C3BC245804660055D57A /* TruckModel.swift */; };
 		5ACD52A624541FF800903F26 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5ACD52A524541FF800903F26 /* GoogleService-Info.plist */; };
 		5ACD52A9245425CE00903F26 /* AuthController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ACD52A8245425CE00903F26 /* AuthController.swift */; };
@@ -39,7 +38,6 @@
 		5AC9C3B12457C19E0055D57A /* MenuCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCollectionViewController.swift; sourceTree = "<group>"; };
 		5AC9C3B32457E5430055D57A /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		5AC9C3B52457F3C00055D57A /* MenuCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCollectionViewCell.swift; sourceTree = "<group>"; };
-		5AC9C3B8245803E50055D57A /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		5AC9C3BC245804660055D57A /* TruckModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TruckModel.swift; sourceTree = "<group>"; };
 		5ACD52A524541FF800903F26 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		5ACD52A8245425CE00903F26 /* AuthController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthController.swift; sourceTree = "<group>"; };
@@ -129,7 +127,6 @@
 			isa = PBXGroup;
 			children = (
 				5AC9C3AC2457B8880055D57A /* Controllers */,
-				5AC9C3B7245803E50055D57A /* Model.xcdatamodeld */,
 				5AC9C3BC245804660055D57A /* TruckModel.swift */,
 			);
 			path = Models;
@@ -324,7 +321,6 @@
 				5AC9C3AA2457A2AA0055D57A /* FoodTruckTableViewCell.swift in Sources */,
 				5AD8D59A2453D6F900AB291E /* SignUpViewController.swift in Sources */,
 				5ACD52A9245425CE00903F26 /* AuthController.swift in Sources */,
-				5AC9C3B9245803E50055D57A /* Model.xcdatamodeld in Sources */,
 				5AD8D59C2453D70900AB291E /* PreviewViewController.swift in Sources */,
 				5ACD52AC24542C1100903F26 /* UIViewController+UIAlert.swift in Sources */,
 				5AC9C3B42457E5430055D57A /* MapViewController.swift in Sources */,
@@ -526,19 +522,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		5AC9C3B7245803E50055D57A /* Model.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				5AC9C3B8245803E50055D57A /* Model.xcdatamodel */,
-			);
-			currentVersion = 5AC9C3B8245803E50055D57A /* Model.xcdatamodel */;
-			path = Model.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 5AD8D5752453C5FC00AB291E /* Project object */;
 }

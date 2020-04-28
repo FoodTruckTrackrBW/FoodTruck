@@ -597,10 +597,10 @@
             </objects>
             <point key="canvasLocation" x="4894" y="-154"/>
         </scene>
-        <!--View Controller-->
+        <!--Map View Controller-->
         <scene sceneID="5vn-zp-OPA">
             <objects>
-                <viewController id="PPx-ch-dgo" sceneMemberID="viewController">
+                <viewController id="PPx-ch-dgo" customClass="MapViewController" customModule="FoodTruck" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mbj-dg-hF5">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

@@ -13,6 +13,7 @@
 		5AC9C3B02457B9CE0055D57A /* TruckDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC9C3AF2457B9CD0055D57A /* TruckDetailViewController.swift */; };
 		5AC9C3B22457C19E0055D57A /* MenuCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC9C3B12457C19E0055D57A /* MenuCollectionViewController.swift */; };
 		5AC9C3B42457E5430055D57A /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC9C3B32457E5430055D57A /* MapViewController.swift */; };
+		5AC9C3B62457F3C00055D57A /* MenuCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC9C3B52457F3C00055D57A /* MenuCollectionViewCell.swift */; };
 		5ACD52A624541FF800903F26 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5ACD52A524541FF800903F26 /* GoogleService-Info.plist */; };
 		5ACD52A9245425CE00903F26 /* AuthController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ACD52A8245425CE00903F26 /* AuthController.swift */; };
 		5ACD52AC24542C1100903F26 /* UIViewController+UIAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ACD52AB24542C1100903F26 /* UIViewController+UIAlert.swift */; };
@@ -35,6 +36,7 @@
 		5AC9C3AF2457B9CD0055D57A /* TruckDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TruckDetailViewController.swift; sourceTree = "<group>"; };
 		5AC9C3B12457C19E0055D57A /* MenuCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCollectionViewController.swift; sourceTree = "<group>"; };
 		5AC9C3B32457E5430055D57A /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		5AC9C3B52457F3C00055D57A /* MenuCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCollectionViewCell.swift; sourceTree = "<group>"; };
 		5ACD52A524541FF800903F26 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		5ACD52A8245425CE00903F26 /* AuthController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthController.swift; sourceTree = "<group>"; };
 		5ACD52AB24542C1100903F26 /* UIViewController+UIAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+UIAlert.swift"; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				5AC9C3A92457A2AA0055D57A /* FoodTruckTableViewCell.swift */,
+				5AC9C3B52457F3C00055D57A /* MenuCollectionViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -293,6 +296,7 @@
 				5AD8D59C2453D70900AB291E /* PreviewViewController.swift in Sources */,
 				5ACD52AC24542C1100903F26 /* UIViewController+UIAlert.swift in Sources */,
 				5AC9C3B42457E5430055D57A /* MapViewController.swift in Sources */,
+				5AC9C3B62457F3C00055D57A /* MenuCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

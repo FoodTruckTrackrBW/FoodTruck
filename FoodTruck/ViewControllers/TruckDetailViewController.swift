@@ -10,21 +10,32 @@ import UIKit
 
 class TruckDetailViewController: UIViewController {
 
+    @IBOutlet weak var truckNameLabel: UILabel!
+    @IBOutlet weak var truckImageView: UIImageView!
+    @IBOutlet weak var typeOfCusineLabel: UILabel!
+    @IBOutlet weak var ratingLabel: UILabel!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
     
-
-    /*
+    @IBAction func menuButtonTapped(_ sender: UIButton) {
+    }
+    
+    @IBAction func locationButtonTapped(_ sender: UIButton) {
+    }
+    
+    
     // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        if segue.identifier == "MenuDetailShowSegue" {
+            guard let segue.destination as? 
+        } else if segue.identifier == "MapViewShowSegue" {
+            
+        }
     }
-    */
-
 }

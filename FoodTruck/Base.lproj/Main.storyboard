@@ -424,10 +424,10 @@
             </objects>
             <point key="canvasLocation" x="3388" y="126"/>
         </scene>
-        <!--View Controller-->
+        <!--Truck Detail View Controller-->
         <scene sceneID="SV1-cG-0w4">
             <objects>
-                <viewController id="I99-8M-Ihk" sceneMemberID="viewController">
+                <viewController id="I99-8M-Ihk" customClass="TruckDetailViewController" customModule="FoodTruck" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="m2l-GB-STh">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -476,6 +476,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <state key="normal" title="Menu"/>
                                         <connections>
+                                            <action selector="menuButtonTapped:" destination="I99-8M-Ihk" eventType="touchUpInside" id="iub-ce-zfj"/>
                                             <segue destination="128-an-Fza" kind="show" identifier="MenuDetailShowSegue" id="yvO-El-pp4"/>
                                         </connections>
                                     </button>
@@ -487,6 +488,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <state key="normal" title="Location"/>
                                         <connections>
+                                            <action selector="locationButtonTapped:" destination="I99-8M-Ihk" eventType="touchUpInside" id="OUk-TZ-wVQ"/>
                                             <segue destination="PPx-ch-dgo" kind="show" identifier="MapViewShowSegue" id="W6g-qZ-YUT"/>
                                         </connections>
                                     </button>
@@ -510,6 +512,12 @@
                         <viewLayoutGuide key="safeArea" id="S7v-Z7-Bsc"/>
                     </view>
                     <navigationItem key="navigationItem" id="Ovx-m3-okd"/>
+                    <connections>
+                        <outlet property="ratingLabel" destination="NUh-AQ-ktb" id="jye-Qw-sDW"/>
+                        <outlet property="truckImageView" destination="0ut-11-7t5" id="UEd-Jf-c6M"/>
+                        <outlet property="truckNameLabel" destination="kpD-pT-z7z" id="r7c-vd-2ku"/>
+                        <outlet property="typeOfCusineLabel" destination="OL2-Wu-eea" id="bYw-BD-ZmD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PMH-y9-FL7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -518,7 +526,7 @@
         <!--Menu-->
         <scene sceneID="a3U-Yv-aT6">
             <objects>
-                <collectionViewController id="128-an-Fza" sceneMemberID="viewController">
+                <collectionViewController id="128-an-Fza" customClass="MenuCollectionViewController" customModule="FoodTruck" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="WF4-r6-NjS">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

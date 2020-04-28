@@ -10,6 +10,8 @@ import UIKit
 
 class FoodTruckTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var truckName: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

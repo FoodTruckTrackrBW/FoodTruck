@@ -15,7 +15,6 @@
 		5AC9C3B42457E5430055D57A /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC9C3B32457E5430055D57A /* MapViewController.swift */; };
 		5AC9C3B62457F3C00055D57A /* MenuCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC9C3B52457F3C00055D57A /* MenuCollectionViewCell.swift */; };
 		5AC9C3BD245804660055D57A /* TruckModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC9C3BC245804660055D57A /* TruckModel.swift */; };
-		5ACD52A624541FF800903F26 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5ACD52A524541FF800903F26 /* GoogleService-Info.plist */; };
 		5ACD52A9245425CE00903F26 /* AuthController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ACD52A8245425CE00903F26 /* AuthController.swift */; };
 		5ACD52AC24542C1100903F26 /* UIViewController+UIAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ACD52AB24542C1100903F26 /* UIViewController+UIAlert.swift */; };
 		5AD8D5812453C5FC00AB291E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD8D5802453C5FC00AB291E /* AppDelegate.swift */; };
@@ -267,7 +266,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				5AD8D58D2453C5FF00AB291E /* LaunchScreen.storyboard in Resources */,
-				5ACD52A624541FF800903F26 /* GoogleService-Info.plist in Resources */,
 				5AD8D58A2453C5FF00AB291E /* Assets.xcassets in Resources */,
 				5AD8D5882453C5FC00AB291E /* Main.storyboard in Resources */,
 			);
@@ -302,13 +300,36 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-FoodTruck/Pods-FoodTruck-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-FoodTruck/Pods-FoodTruck-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL-GRPC/openssl_grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/PromisesObjC/FBLPromises.framework",
+				"${BUILT_PRODUCTS_DIR}/abseil/absl.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-C++/grpcpp.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-FoodTruck/Pods-FoodTruck-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl_grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBLPromises.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/absl.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpcpp.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FoodTruck/Pods-FoodTruck-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FoodTruck/Pods-FoodTruck-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

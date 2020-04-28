@@ -14,6 +14,8 @@
 		5AC9C3B22457C19E0055D57A /* MenuCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC9C3B12457C19E0055D57A /* MenuCollectionViewController.swift */; };
 		5AC9C3B42457E5430055D57A /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC9C3B32457E5430055D57A /* MapViewController.swift */; };
 		5AC9C3B62457F3C00055D57A /* MenuCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC9C3B52457F3C00055D57A /* MenuCollectionViewCell.swift */; };
+		5AC9C3B9245803E50055D57A /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5AC9C3B7245803E50055D57A /* Model.xcdatamodeld */; };
+		5AC9C3BD245804660055D57A /* TruckModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC9C3BC245804660055D57A /* TruckModel.swift */; };
 		5ACD52A624541FF800903F26 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5ACD52A524541FF800903F26 /* GoogleService-Info.plist */; };
 		5ACD52A9245425CE00903F26 /* AuthController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ACD52A8245425CE00903F26 /* AuthController.swift */; };
 		5ACD52AC24542C1100903F26 /* UIViewController+UIAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ACD52AB24542C1100903F26 /* UIViewController+UIAlert.swift */; };
@@ -37,6 +39,8 @@
 		5AC9C3B12457C19E0055D57A /* MenuCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCollectionViewController.swift; sourceTree = "<group>"; };
 		5AC9C3B32457E5430055D57A /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		5AC9C3B52457F3C00055D57A /* MenuCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCollectionViewCell.swift; sourceTree = "<group>"; };
+		5AC9C3B8245803E50055D57A /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		5AC9C3BC245804660055D57A /* TruckModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TruckModel.swift; sourceTree = "<group>"; };
 		5ACD52A524541FF800903F26 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		5ACD52A8245425CE00903F26 /* AuthController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthController.swift; sourceTree = "<group>"; };
 		5ACD52AB24542C1100903F26 /* UIViewController+UIAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+UIAlert.swift"; sourceTree = "<group>"; };
@@ -81,6 +85,7 @@
 			children = (
 				5AC9C3A92457A2AA0055D57A /* FoodTruckTableViewCell.swift */,
 				5AC9C3B52457F3C00055D57A /* MenuCollectionViewCell.swift */,
+				5AC9C3BA245804070055D57A /* Storyboard */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -94,10 +99,38 @@
 			path = Controllers;
 			sourceTree = "<group>";
 		};
+		5AC9C3BA245804070055D57A /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				5AD8D5862453C5FC00AB291E /* Main.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		5AC9C3BB245804390055D57A /* Apps */ = {
+			isa = PBXGroup;
+			children = (
+				5AD8D5802453C5FC00AB291E /* AppDelegate.swift */,
+				5AD8D5822453C5FC00AB291E /* SceneDelegate.swift */,
+			);
+			path = Apps;
+			sourceTree = "<group>";
+		};
+		5AC9C3BE245804740055D57A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5AD8D5892453C5FF00AB291E /* Assets.xcassets */,
+				5AD8D58B2453C5FF00AB291E /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		5ACD52A7245425AA00903F26 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				5AC9C3AC2457B8880055D57A /* Controllers */,
+				5AC9C3B7245803E50055D57A /* Model.xcdatamodeld */,
+				5AC9C3BC245804660055D57A /* TruckModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -131,15 +164,12 @@
 		5AD8D57F2453C5FC00AB291E /* FoodTruck */ = {
 			isa = PBXGroup;
 			children = (
+				5AC9C3BB245804390055D57A /* Apps */,
 				5ACD52AA24542BEA00903F26 /* Helpers */,
-				5AD8D5802453C5FC00AB291E /* AppDelegate.swift */,
-				5AD8D5822453C5FC00AB291E /* SceneDelegate.swift */,
-				5AD8D5862453C5FC00AB291E /* Main.storyboard */,
 				5ACD52A7245425AA00903F26 /* Models */,
 				5AC9C3AB2457A2B30055D57A /* Views */,
 				5AD8D5962453D6CC00AB291E /* ViewControllers */,
-				5AD8D5892453C5FF00AB291E /* Assets.xcassets */,
-				5AD8D58B2453C5FF00AB291E /* LaunchScreen.storyboard */,
+				5AC9C3BE245804740055D57A /* Resources */,
 				5ACD52A524541FF800903F26 /* GoogleService-Info.plist */,
 				5AD8D58E2453C5FF00AB291E /* Info.plist */,
 			);
@@ -287,12 +317,14 @@
 				5AD8D5812453C5FC00AB291E /* AppDelegate.swift in Sources */,
 				5AD8D5982453D6E900AB291E /* LoginInViewController.swift in Sources */,
 				5AF51BED24579B7A006C98E3 /* FoodTruckListViewController.swift in Sources */,
+				5AC9C3BD245804660055D57A /* TruckModel.swift in Sources */,
 				5AD8D5832453C5FC00AB291E /* SceneDelegate.swift in Sources */,
 				5AC9C3B02457B9CE0055D57A /* TruckDetailViewController.swift in Sources */,
 				5AD8D5952453D6C300AB291E /* StartViewController.swift in Sources */,
 				5AC9C3AA2457A2AA0055D57A /* FoodTruckTableViewCell.swift in Sources */,
 				5AD8D59A2453D6F900AB291E /* SignUpViewController.swift in Sources */,
 				5ACD52A9245425CE00903F26 /* AuthController.swift in Sources */,
+				5AC9C3B9245803E50055D57A /* Model.xcdatamodeld in Sources */,
 				5AD8D59C2453D70900AB291E /* PreviewViewController.swift in Sources */,
 				5ACD52AC24542C1100903F26 /* UIViewController+UIAlert.swift in Sources */,
 				5AC9C3B42457E5430055D57A /* MapViewController.swift in Sources */,
@@ -494,6 +526,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		5AC9C3B7245803E50055D57A /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				5AC9C3B8245803E50055D57A /* Model.xcdatamodel */,
+			);
+			currentVersion = 5AC9C3B8245803E50055D57A /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 5AD8D5752453C5FC00AB291E /* Project object */;
 }

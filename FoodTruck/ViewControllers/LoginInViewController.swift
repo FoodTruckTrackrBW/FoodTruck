@@ -12,7 +12,7 @@ import FirebaseAuth
 class LoginInViewController: UIViewController {
 
     var handle: AuthStateDidChangeListenerHandle?
-    let authController = AuthController()
+    let apiController = FoodTruckApiController()
     
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
@@ -63,9 +63,14 @@ class LoginInViewController: UIViewController {
     private func login() {
         guard let email = emailTextField.text,
             let password = passwordTextField.text else { return }
+        
+        apiController.signUp(with: )
+        
+        /*
         authController.signIn(email: email, password: password)
         if Auth.auth().currentUser != nil {
             self.performSegue(withIdentifier: "LoginToMainScreenShowSegue", sender: self)
         }
+ */
     }
 }

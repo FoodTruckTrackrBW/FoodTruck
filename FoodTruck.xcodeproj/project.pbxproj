@@ -28,6 +28,9 @@
 		5AD8D59A2453D6F900AB291E /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD8D5992453D6F900AB291E /* SignUpViewController.swift */; };
 		5AD8D59C2453D70900AB291E /* PreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD8D59B2453D70900AB291E /* PreviewViewController.swift */; };
 		5AF51BED24579B7A006C98E3 /* FoodTruckListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF51BEC24579B7A006C98E3 /* FoodTruckListViewController.swift */; };
+		C44C17332458A8DC0023B83E /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44C17322458A8DC0023B83E /* CoreDataStack.swift */; };
+		C44C17352458A8EE0023B83E /* ConvenienceInits.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44C17342458A8EE0023B83E /* ConvenienceInits.swift */; };
+		C4A557C92458A3C40006607D /* FoodTruck.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C4A557C72458A3C40006607D /* FoodTruck.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +59,9 @@
 		5AF51BEC24579B7A006C98E3 /* FoodTruckListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTruckListViewController.swift; sourceTree = "<group>"; };
 		5B60E9CA1AE9C7A7FD8D37B0 /* Pods-FoodTruck.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodTruck.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FoodTruck/Pods-FoodTruck.debug.xcconfig"; sourceTree = "<group>"; };
 		707C6C167BC950CF3134D022 /* Pods-FoodTruck.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodTruck.release.xcconfig"; path = "Pods/Target Support Files/Pods-FoodTruck/Pods-FoodTruck.release.xcconfig"; sourceTree = "<group>"; };
+		C44C17322458A8DC0023B83E /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		C44C17342458A8EE0023B83E /* ConvenienceInits.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConvenienceInits.swift; sourceTree = "<group>"; };
+		C4A557C82458A3C40006607D /* FoodTruck.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FoodTruck.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +132,8 @@
 		5ACD52A7245425AA00903F26 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				C44C17322458A8DC0023B83E /* CoreDataStack.swift */,
+				C44C17342458A8EE0023B83E /* ConvenienceInits.swift */,
 				5AC9C3AC2457B8880055D57A /* Controllers */,
 				5AC9C3BC245804660055D57A /* TruckModel.swift */,
 			);
@@ -143,6 +151,7 @@
 		5AD8D5742453C5FC00AB291E = {
 			isa = PBXGroup;
 			children = (
+				C4A557C72458A3C40006607D /* FoodTruck.xcdatamodeld */,
 				5AD8D57F2453C5FC00AB291E /* FoodTruck */,
 				5AD8D57E2453C5FC00AB291E /* Products */,
 				8BA32605B2FC85FBFE342CF5 /* Pods */,
@@ -311,10 +320,13 @@
 			files = (
 				5AC9C3AE2457B8B30055D57A /* FoodTruckApiController.swift in Sources */,
 				5AC9C3B22457C19E0055D57A /* MenuCollectionViewController.swift in Sources */,
+				C44C17352458A8EE0023B83E /* ConvenienceInits.swift in Sources */,
 				5AD8D5812453C5FC00AB291E /* AppDelegate.swift in Sources */,
+				C44C17332458A8DC0023B83E /* CoreDataStack.swift in Sources */,
 				5AD8D5982453D6E900AB291E /* LoginInViewController.swift in Sources */,
 				5AF51BED24579B7A006C98E3 /* FoodTruckListViewController.swift in Sources */,
 				5AC9C3BD245804660055D57A /* TruckModel.swift in Sources */,
+				C4A557C92458A3C40006607D /* FoodTruck.xcdatamodeld in Sources */,
 				5AD8D5832453C5FC00AB291E /* SceneDelegate.swift in Sources */,
 				5AC9C3B02457B9CE0055D57A /* TruckDetailViewController.swift in Sources */,
 				5AD8D5952453D6C300AB291E /* StartViewController.swift in Sources */,
@@ -522,6 +534,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C4A557C72458A3C40006607D /* FoodTruck.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C4A557C82458A3C40006607D /* FoodTruck.xcdatamodel */,
+			);
+			currentVersion = C4A557C82458A3C40006607D /* FoodTruck.xcdatamodel */;
+			path = FoodTruck.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 5AD8D5752453C5FC00AB291E /* Project object */;
 }

@@ -64,8 +64,22 @@ class LoginInViewController: UIViewController {
         guard let email = emailTextField.text,
             let password = passwordTextField.text else { return }
         
-        apiController.signUp(with: )
-        
+        gigController.signUp(with: user, completion: { error in
+            if let error = error {
+                NSLog("Error occurred during sign up: \(error)")
+            } else {
+                
+                gigController?.signIn(with: user, completion: { error in
+                    if let error = error {
+                        NSLog("Error occurred during sign in: \(error)")
+                    } else {
+                        DispatchQueue.main.async {
+                            self.dismiss(animated: true, completion: nil)
+                        }
+                    }
+                })
+                
+            }
         /*
         authController.signIn(email: email, password: password)
         if Auth.auth().currentUser != nil {

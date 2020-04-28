@@ -33,10 +33,10 @@ class TruckDetailViewController: UIViewController {
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "MenuDetailShowSegue" {
-            guard let segue.destination as? MenuCollectionViewController else { return }
+            guard let destination = segue.destination as? MenuCollectionViewController else { return }
             
         } else if segue.identifier == "MapViewShowSegue" {
-            guard let segue.destination as? MapViewController else { return }
+            guard let destination = segue.destination as? MapViewController else { return }
             
         }
     }
